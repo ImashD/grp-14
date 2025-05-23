@@ -59,3 +59,9 @@ try:
     apps = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "app-card")))  # Adjust class
     for app in apps:
         label = app.find_element(By.CLASS_NAME, "platform-label").text.lower()
+
+             
+    # Step 7: Verify only Android apps are visible (if class names are available)
+    apps = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "app-card")))  # Adjust class
+    for app in apps:
+        label = app.find_element(By.CLASS_NAME, "platform-label").text.lower()
