@@ -18,6 +18,10 @@ try:
     search_bar = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "ant-collapse-header-text")))
     search_bar.click()
 
+     # Step 1: Click on the “Search Apps” bar
+    search_bar = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "ant-collapse-header-text")))
+    search_bar.click()
+
     # Step 2: Click on “+” (plus) button
     plus_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".add-filter-button")))  # Adjust selector
     plus_button.click()
